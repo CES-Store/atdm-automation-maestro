@@ -1,0 +1,10 @@
+appId: com.google.android.contacts
+---
+- tapOn: "${output.contactsData.usuario.nombre} ${output.contactsData.usuario.apellido}"
+- tapOn:
+    id: ${output.userProfilePom.botones.editar}
+- tapOn: ${output.createContactsPom.botones.opciones}
+- tapOn: ${output.createContactsPom.botones.borrar}
+- tapOn: ${output.createContactsPom.botones.borrar}
+- assertVisible:
+    text: ${output.contactsData.datosestaticos.borrado}

@@ -1,0 +1,6 @@
+appId: com.google.android.contacts
+---
+- runScript: data/contacts.data.js
+- runScript: pom/create-contacts.pom.js
+- runScript: pom/list-contacts.pom.js
+- runScript: pom/user-profile.pom.js

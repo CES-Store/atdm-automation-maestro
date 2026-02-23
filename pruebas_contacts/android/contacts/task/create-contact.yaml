@@ -1,0 +1,13 @@
+appId: com.google.android.contacts
+---
+- tapOn: "${output.createContactsPom.campos.nombre}"
+- inputText: "${output.contactsData.usuario.nombre}"
+- tapOn: "${output.createContactsPom.campos.apellido}"
+- inputText: "${output.contactsData.usuario.apellido}"
+- scrollUntilVisible:
+    element:
+      text: "${output.createContactsPom.campos.telefono}"
+- tapOn: "${output.createContactsPom.campos.telefono}"
+- inputText: "${output.contactsData.usuario.celular}"
+- tapOn: "${output.createContactsPom.botones.guardar}"
+- assertVisible: "${output.contactsData.usuario.nombre} ${output.contactsData.usuario.apellido}"

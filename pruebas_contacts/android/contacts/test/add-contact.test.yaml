@@ -1,0 +1,8 @@
+appId: com.google.android.contacts
+---
+- runFlow: ../load-data-pom.yaml
+
+- launchApp
+
+- runFlow: ../task/add-contact.yaml
+- runFlow: ../task/create-contact.yaml

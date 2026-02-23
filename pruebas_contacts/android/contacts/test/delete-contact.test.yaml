@@ -1,0 +1,7 @@
+appId: com.google.android.contacts
+---
+- runFlow: ../load-data-pom.yaml
+
+- launchApp
+
+- runFlow: ../task/delete-contact.yaml
