@@ -1,0 +1,7 @@
+appId: ${appId}
+---
+- runFlow: ../load-data-pom.yaml
+
+- launchApp:
+    label: Ejecución de aplicación Wikipedia
+    clearState: true

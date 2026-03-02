@@ -1,0 +1,6 @@
+appId: ${appId}
+---
+
+- tapOn:
+    label: Presionamos botón "SKIP"
+    text: ${output.bienvenidaPom.escapar}

@@ -1,0 +1,19 @@
+appId: ${appId}
+---
+- repeat:
+    label: Accedemos a la búsqueda
+    times: 2
+    commands:
+      - tapOn:
+          label: Tocamos en el buscador
+          id: ${output.navegacionPom.buscar}
+- inputText:
+    label: Ingresamos texto ${output.busquedaData.termino_busqueda}
+    text: ${output.busquedaData.termino_busqueda}
+- tapOn:
+    label: Seleccionamos resultado
+    text: ${output.busquedaData.termino_busqueda}
+    index: 1
+- assertVisible:
+    label: 'Verificamos texto: ${output.busquedaData.validaciones.texto_resultado}'
+    text: ${output.busquedaData.validaciones.texto_resultado}

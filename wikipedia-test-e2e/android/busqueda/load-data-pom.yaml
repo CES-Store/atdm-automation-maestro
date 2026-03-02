@@ -1,0 +1,5 @@
+appId: ${appId}
+---
+- runScript: data/busqueda.data.js
+- runScript: pom/bienvenida.pom.js
+- runScript: pom/navegacion.pom.js

@@ -1,0 +1,11 @@
+appId: ${appId}
+---
+- runFlow: ../task/ejecutar-app.yaml
+
+- assertVisible:
+    label: 'Verificamos texto: "Hello, World!"'
+    text: ${output.busquedaData.validaciones.texto_saludo}
+    optional: true
+
+- runFlow: ../task/salir-pantalla-bienvenida.yaml
+- runFlow: ../task/realizar-busqueda.yaml
