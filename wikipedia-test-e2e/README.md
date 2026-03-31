@@ -2,7 +2,7 @@
 
 Para lograr una ejecución similar, tener en cuenta lo siguiente:
 
-* Aplicación bajo prueba: Agenda de contactos nativa
+* Aplicación bajo prueba: Wikipedia
 * Dispositivo: Pixel 7 con Android 13
 * Emulador: Android Studio -> Device Manager
 
