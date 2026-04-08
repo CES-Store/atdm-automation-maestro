@@ -1,0 +1,12 @@
+appId: com.android.chrome
+
+---
+
+- launchApp:
+    clearState: true
+- tapOn: Stay signed out
+- tapOn:
+    id: search_box_text
+- inputText: "https://maestro.dev/"
+- pressKey: Enter
+- assertVisible:  "End-to-end testing for Mobile and Web apps."

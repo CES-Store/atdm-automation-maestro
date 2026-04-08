@@ -1,0 +1,7 @@
+appId: com.android.chrome
+---
+- tapOn:
+    id: search_box_text
+- inputText: ${TERMINO_BUSQUEDA}
+- pressKey: Enter
+- assertVisible: ${RESULTADO_ESPERADO}

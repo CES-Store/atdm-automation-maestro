@@ -1,0 +1,18 @@
+appId: com.android.chrome
+---
+- runScript: cargar-datos.js
+- evalScript: ${output.index = 0}
+
+- repeat:
+    while:
+      true: ${output.index < output.googleSearch.length}
+    commands:
+      - launchApp:
+          clearState: true
+      - tapOn: Stay signed out
+      - tapOn:
+          id: search_box_text
+      - inputText: ${output.googleSearch[output.index].terminoBusqueda}
+      - pressKey: Enter
+      - assertVisible: ${output.googleSearch[output.index].resultadoEsperado}
+      - evalScript: ${output.index++}

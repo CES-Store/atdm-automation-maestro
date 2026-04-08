@@ -1,0 +1,19 @@
+appId: com.android.chrome
+
+---
+- runScript: cargar-datos.js
+- evalScript: ${output.index = 0}
+
+- repeat:
+    while:
+      true: ${output.index < output.googleSearch.length}
+    commands:
+      - launchApp:
+          clearState: true
+      - tapOn: Stay signed out
+      - runFlow: 
+          file: buscar.yaml
+          env:
+            TERMINO_BUSQUEDA: ${output.googleSearch[output.index].terminoBusqueda}
+            RESULTADO_ESPERADO:  ${output.googleSearch[output.index].resultadoEsperado}
+      - evalScript: ${output.index++}
