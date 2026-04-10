@@ -1,0 +1,5 @@
+appId: ${appId}
+tags:
+  - smoke
+---
+- evalScript: ${console.log("Probando el perfil de usuario...")}

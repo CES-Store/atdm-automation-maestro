@@ -1,0 +1,5 @@
+appId: org.wikipedia
+tags:
+  - regression
+---
+- evalScript: ${console.log("Autenticando usuario...")}

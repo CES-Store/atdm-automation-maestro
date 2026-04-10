@@ -1,0 +1,5 @@
+appId: ${appId}
+tags:
+  - regression
+---
+- evalScript: ${console.log("Generando compra.")}

@@ -1,0 +1,6 @@
+flows:
+  - "android/modulo-autenticacion/test/*" # Incluye flujos dentro de la carpeta modulo-autenticacion
+  - "android/modulo-carrito/test/*"
+  - "android/modulo-finalizacion/test/*"
+  - "android/modulo-perfilusuario/test/*"
+  - "android/modulo-smoke/test/*"
